@@ -1,6 +1,8 @@
+import Link from 'next/link'
+
 const Index = () => (
     <div>
-        <a href="/about"><li style={{ display: 'flex', margin: 40 }}>about</li></a>
+        <Link href="/about"><a><li style={{ display: 'flex', margin: 40 }}>About</li></a></Link>
         <p>Hello Next.js</p>
     </div>
 )
