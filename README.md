@@ -1,2 +1,2 @@
 # IntroNextJs
-Introduction to Next Js test
+Introduction to Next Js
