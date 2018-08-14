@@ -37,3 +37,24 @@ const Layout = (props) => (
 ```
 
 If you remove {props.children}, the Layout cannot render the content 
+
+# Read Data Froy Query 
+
+1-we need to create a post page 
+2-we need to import withRouter
+
+```
+import {withRouter} from 'next/router'
+```
+
+3-we need to pass the props inside withRouter
+
+```
+const Content = withRouter((props) => 
+(
+   <div>
+    <h1>{props.router.query.title}</h1>
+    <p>This is the blog post content.</p>
+  </div>
+))
+```
