@@ -25,6 +25,8 @@ The only requirement for components placed inside a Link is they should accept a
 
 # Render Layout Component with children elements 
 
+we put inside the Layout element 
+
 ```
 const Layout = (props) => (
   <div style={layoutStyle}>
@@ -34,4 +36,4 @@ const Layout = (props) => (
 )
 ```
 
-If you remove {props.children}, the Layout cannot render the content we put inside the Layout element 
+If you remove {props.children}, the Layout cannot render the content 
