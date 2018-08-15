@@ -80,3 +80,10 @@ All you have to do is just add the “as” prop for the link.
 ```
 <PostLink id="hello-nextjs" title="Hello Next.js" />
 ```
+
+### if we Reload the browser:
+
+It will throw a 404 error.
+ 
+Next.js's <span style={color:'red'}>custom server API</span> is the solution for this problem.
+
