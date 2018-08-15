@@ -58,3 +58,17 @@ const Content = withRouter((props) =>
   </div>
 ))
 ```
+
+# Clean URLs with Route Masking
+## as
+In the <Link> element, we have used another prop called “as”. That's the URL which we need to show on the browser. The URL your app sees is mentioned in the “href” prop.
+
+```
+const PostLink = (props) => (
+  <li>
+    <Link as={`/p/${props.id}`} href={`/post?title=${props.title}`}>
+      <a>{props.title}</a>
+    </Link>
+  </li>
+)
+```
