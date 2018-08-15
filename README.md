@@ -85,5 +85,5 @@ All you have to do is just add the “as” prop for the link.
 
 It will throw a 404 error.
  
-Next.js's ** custom server API ** is the solution for this problem.
+Next.js's **custom server API** is the solution for this problem.
 
