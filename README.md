@@ -99,3 +99,24 @@ Create route in server to handle the mask routes
 ```
 
 it's work fine in this case but we will have an issue if we refresh the page the title will be the params id so the title will change in this case
+
+# getInitialProps
+
+```
+Index.getInitialProps = async function () {
+    const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+    const data = await res.json()
+
+    console.log(`Show data fetched. Count: ${data.length}`)
+     return {
+        shows: data
+    }
+}
+```
+
+Fetching Data for Pages and if you print console it display it Only on the Server
+
+In this case, the message only printed on the server.
+
+That's because we render the page on the server.
+So, we already have the data and there is no reason to fetch it again in the client.
