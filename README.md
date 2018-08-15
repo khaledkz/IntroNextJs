@@ -87,3 +87,15 @@ It will throw a 404 error.
  
 Next.js's **custom server API** is the solution for this problem.
 
+
+Create route in server to handle the mask routes 
+
+```
+ server.get('/p/:id', (req, res) => {
+            const actualPage = '/post'
+            const queryParams = { title: req.params.id }
+            app.render(req, res, actualPage, queryParams)
+        })
+```
+
+it's work fine in this case but we will have an issue if we refresh the page the title will be the params id so the title will change in this case
