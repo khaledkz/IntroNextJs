@@ -155,3 +155,18 @@ It also supports having constraints inside styled-jsx. In the future, we will be
 ```
 ({``})
 ```
+
+# No Effect for Nested Component
+
+jsx CSS rules have no effect on elements inside of a child component.
+
+This feature of styled-jsx helps you to manage styles for bigger apps.
+
+In that case, you need to style the child component directly. And in our particular case, we need to use global selectors.
+
+```
+   <style jsx global>{`
+  `}
+  </style>
+```
+
