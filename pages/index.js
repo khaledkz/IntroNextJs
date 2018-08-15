@@ -6,7 +6,7 @@ const PostLink = (props) => (
     <Link as={`/p/${props.id}`} href={`/post?id=${props.id}`}>
         <div>
         <a>{props.title}</a>
-        {/* <style jsx>{`a{text-decoration:none; cursor:pointer;} a:hover{color:blue;}`}</style> */}
+        <style jsx>{`a{text-decoration:none; cursor:pointer;} a:hover{color:green;}`}</style>
         </div>
     </Link>
 
@@ -41,7 +41,7 @@ const Index = (props) => (
         cursor:pointer;
       }
 
-      a:hover {
+      a:hover{
         opacity: 0.6;
       }
     `}</style>
