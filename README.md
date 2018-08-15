@@ -61,6 +61,7 @@ const Content = withRouter((props) =>
 
 # Clean URLs with Route Masking
 ## as
+
 In the <Link> element, we have used another prop called “as”. That's the URL which we need to show on the browser. The URL your app sees is mentioned in the “href” prop.
 
 ```
@@ -71,4 +72,11 @@ const PostLink = (props) => (
     </Link>
   </li>
 )
+```
+
+route masking works pretty nicely with the browser history.
+All you have to do is just add the “as” prop for the link.
+
+```
+<PostLink id="hello-nextjs" title="Hello Next.js" />
 ```
