@@ -4,7 +4,10 @@ import "isomorphic-fetch"
 
 const PostLink = (props) => (
     <Link as={`/p/${props.id}`} href={`/post?id=${props.id}`}>
+        <div>
         <a>{props.title}</a>
+        <style jsx>{`a{text-decoration:none; cursor:pointer;} a:hover{color:blue;}`}</style>
+        </div>
     </Link>
 
 )
@@ -18,6 +21,29 @@ const Index = (props) => (
                     <PostLink id={show.show.id} title={show.show.name} />
                 </li>))}
             </ul>
+            <style jsx>{`
+      h1, a {
+        font-family: "Arial";
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        margin: 5px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+
+      a:hover {
+        opacity: 0.6;
+      }
+    `}</style>
         </Layout>
     </div>
 )
