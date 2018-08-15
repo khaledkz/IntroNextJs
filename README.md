@@ -170,3 +170,40 @@ In that case, you need to style the child component directly. And in our particu
   </style>
 ```
 
+# Export into a Static HTML App
+
+```
+module.exports = {
+  exportPathMap: function () {
+    return {
+      '/': { page: '/' }
+    }
+  }
+}
+```
+
+Then add the following NPM scripts into the package.json.
+
+
+```
+{
+  "scripts": {
+    "build": "next build",
+    "export": "next export"
+  }
+}
+```
+
+Then run the following commands:
+
+```
+npm run build
+npm run export
+```
+
+then we cd to out and run serve command
+
+```
+cd out
+serve -p 8080
+```
