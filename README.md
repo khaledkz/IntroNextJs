@@ -134,3 +134,15 @@ server.get('/p/:id', (req, res) => {
 ```
 to pass the queryparams in the url the mask query will appear so it will stay nice and tidey 
 
+# Styling Components in Next
+
+```
+<style jsx>
+  {`
+    a{color:red; font-size:1.4em;}
+    ul {
+        padding: 0;
+      }
+  `}
+</style>
+```
