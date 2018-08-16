@@ -214,10 +214,12 @@ serve -p 8080
 
 new condition
 
+```
 function test () {
   let testme = true;
   retrun testme && 'hello world';
 }
+```
 
 this function will test testme variable if it's true it will carry on and will return the next part of the function
 
