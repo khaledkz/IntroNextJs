@@ -243,3 +243,20 @@ This line of code its equall to the following code
    const {buttonUrl} =props;}
 ```
 se we can see how this pattern can make us access the props in easier way
+
+
+# slice first element and return the reset of the array
+
+```
+const assets=props.assets;
+const hero=props.assets[0];
+const featured=props.assets.slice(1)
+```
+
+we can simplify this code by the following code:
+
+,,,
+const FeaturedGroup = ({ assets: [hero, ...featured] }) => {
+,,,
+
+it assign the first index inside the assets to hero and the reset of to featured
