@@ -212,7 +212,7 @@ serve -p 8080
 
 ## notes from the app (new usefull patterns)
 
-new condition
+## new condition
 
 ```
 function test () {
@@ -224,3 +224,22 @@ function test () {
 this function will test testme variable if it's true it will carry on and will return the next part of the function
 
 if the testme is null the function will breack and return null
+
+
+## spread props
+
+```
+const LiveGroup = ({ assets, name, buttonText, buttonUrl }) => (
+```
+this pattern will help us to  access the props in easier way
+
+This line of code its equall to the following code
+
+```
+ cosnt LiveGroup= props => {
+   const {assets} =  =props;
+   const {name} =props;
+   const {buttonText} =props;
+   const {buttonUrl} =props;}
+```
+se we can see how this pattern can make us access the props in easier way
