@@ -10,7 +10,7 @@ Once you fix the issue, the page will appear instantly without a full page reloa
 
 # Link
 
-## We Can use Link to navigate between pages 
+## We Can use Link to navigate between pages
 ```
 <Link href="/"> <a> </a> </Link>
 ```
@@ -23,9 +23,9 @@ In this case, it's our anchor.
 Just like a button, you can place any of your custom React components or even a div within a Link.
 The only requirement for components placed inside a Link is they should accept an onClick prop.
 
-# Render Layout Component with children elements 
+# Render Layout Component with children elements
 
-we put inside the Layout element 
+we put inside the Layout element
 
 ```
 const Layout = (props) => (
@@ -36,11 +36,11 @@ const Layout = (props) => (
 )
 ```
 
-If you remove {props.children}, the Layout cannot render the content 
+If you remove {props.children}, the Layout cannot render the content
 
-# Read Data Froy Query 
+# Read Data Froy Query
 
-1-we need to create a post page 
+1-we need to create a post page
 2-we need to import withRouter
 
 ```
@@ -50,7 +50,7 @@ import {withRouter} from 'next/router'
 3-we need to pass the props inside withRouter
 
 ```
-const Content = withRouter((props) => 
+const Content = withRouter((props) =>
 (
    <div>
     <h1>{props.router.query.title}</h1>
@@ -84,11 +84,11 @@ All you have to do is just add the “as” prop for the link.
 ### if we Reload the browser:
 
 It will throw a 404 error.
- 
+
 Next.js's **custom server API** is the solution for this problem.
 
 
-Create route in server to handle the mask routes 
+Create route in server to handle the mask routes
 
 ```
  server.get('/p/:id', (req, res) => {
@@ -122,7 +122,7 @@ That's because we render the page on the server.
 So, we already have the data and there is no reason to fetch it again in the client.
 
 
-so in server we use this route 
+so in server we use this route
 
 ```
 server.get('/p/:id', (req, res) => {
@@ -132,7 +132,7 @@ server.get('/p/:id', (req, res) => {
             app.render(req, res, actualPage, queryParams)
         })
 ```
-to pass the queryparams in the url the mask query will appear so it will stay nice and tidey 
+to pass the queryparams in the url the mask query will appear so it will stay nice and tidey
 
 # Styling Components in Next
 
@@ -148,10 +148,10 @@ to pass the queryparams in the url the mask query will appear so it will stay ni
 ```
 
 ### Styles should go inside template strings
- 
+
 Styled jsx works as a babel plugin. It will parse all of the CSS and apply it in the build process. (With that our styles get applied without any overhead time)
 
-It also supports having constraints inside styled-jsx. In the future, we will be able to use any dynamic variable inside styled-jsx. That is why CSS needs to go inside of a template string. 
+It also supports having constraints inside styled-jsx. In the future, we will be able to use any dynamic variable inside styled-jsx. That is why CSS needs to go inside of a template string.
 ```
 ({``})
 ```
@@ -207,3 +207,18 @@ then we cd to out and run serve command
 cd out
 serve -p 8080
 ```
+
+# Notes
+
+## notes from the app (new usefull patterns)
+
+new condition
+
+function test () {
+  let testme = true;
+  retrun testme && 'hello world';
+}
+
+this function will test testme variable if it's true it will carry on and will return the next part of the function
+
+if the testme is null the function will breack and return null
