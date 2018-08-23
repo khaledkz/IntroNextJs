@@ -13,8 +13,8 @@
  
 //Use Destructuring Assignment to Assign Variables from Arrays
 
-let a= 8;
-let b = 6;
+// let a= 8;
+// let b = 6;
 
- [a,b]=[b,a]
-console.log(b)
+//  [a,b]=[b,a]
+// console.log(b)
