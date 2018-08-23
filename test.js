@@ -11,3 +11,10 @@
 // var street = user.address && user.address.street;
 
  
+//Use Destructuring Assignment to Assign Variables from Arrays
+
+let a= 8;
+let b = 6;
+
+ [a,b]=[b,a]
+console.log(b)
