@@ -143,18 +143,18 @@
 // console.log(bicycle.gear);
 
 // ES6: Use class Syntax to Define a Constructor Function
-function makeClass() {
-  "use strict";
-  /* Alter code below this line */
-return class x {
-  constructor(z){
-    this.z=z
-  }
-}
-  /* Alter code above this line */
-  return Vegetable;
-}
-const Vegetable = makeClass();
-const carrot = new Vegetable('carrot');
-console.log(carrot.name); // => should be 'carrot'
+// function makeClass() {
+//   "use strict";
+//   /* Alter code below this line */
+// return class x {
+//   constructor(z){
+//     this.z=z
+//   }
+// }
+//   /* Alter code above this line */
+//   return Vegetable;
+// }
+// const Vegetable = makeClass();
+// const carrot = new Vegetable('carrot');
+// console.log(carrot.name); // => should be 'carrot'
 
